@@ -1,7 +1,6 @@
 from imageio import imread
 import matplotlib.pyplot as plt
 
-
 def plot_animal_tree(ax=None):
     import graphviz
     plt.figure(dpi=100)
@@ -10,8 +9,8 @@ def plot_animal_tree(ax=None):
     mygraph = graphviz.Digraph(node_attr={'shape': 'box'},
                                edge_attr={'labeldistance': "10.5"},
                                format="png")
-    mygraph.node("0", "날개가 있나요?")
-    mygraph.node("1", "날 수 있나요?")
+    mygraph.node("0", "has feathers?")
+    mygraph.node("1", "is it able to fly?")
     mygraph.node("2", "지느러미가 있나요?")
     mygraph.node("3", "매")
     mygraph.node("4", "펭귄")
